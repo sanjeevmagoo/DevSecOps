@@ -32,7 +32,7 @@ stages:
     - task: Docker@2
       inputs:
        containerRegistry: 'DockerHubConnectionString'
-       repository: $(tag)
+       repository: '$(Build.BuildId)'
        command: 'push'
        tags: |
           $(tag)
