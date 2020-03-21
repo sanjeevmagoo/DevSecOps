@@ -29,11 +29,11 @@ stages:
           $(tag)
           
 
-          - task: Docker@2
-            inputs:
-              containerRegistry: 'DockerHubConnectionString'
-              repository: 'devsecops'
-              command: 'push'
+    - task: Docker@2
+      inputs:
+       containerRegistry: 'DockerHubConnectionString'
+       repository: 'devsecops'
+       command: 'push'
 
 
 
