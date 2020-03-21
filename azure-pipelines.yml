@@ -31,7 +31,7 @@ stages:
 
     - task: Docker@2
       inputs:
-       containerRegistry: 'DockerHubConnectionString'
+       containerRegistry: 'DockerHubConnectionString' 
        repository: 'devsecops'
        command: 'push'
        tags: 'devsecops'
