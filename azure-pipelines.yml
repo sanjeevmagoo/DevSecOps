@@ -28,6 +28,8 @@ stages:
         tags: |
           $(tag)
           
+
+          
 - stage: Push
   displayName: Push image
   jobs:  
@@ -39,8 +41,7 @@ stages:
     - task: Docker@2
       displayName: Push image
       inputs:
-        containerRegistry: |
-          $(DockerHubConnectionString)
+        containerRegistry: 'DockerHubConnectionString'
         repository: $(imageName)
         command: push
         tags: |
