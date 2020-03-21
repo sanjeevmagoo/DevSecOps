@@ -25,14 +25,14 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        repository: 'devsecops'
+        repository: 'direct2sanjeev/devsecops'
         tags: 'devsecops'
           
 
     - task: Docker@2
       inputs:
        containerRegistry: 'DockerHubConnectionString' 
-       repository: 'devsecops'
+       repository: 'direct2sanjeev/devsecops'
        command: 'push'
        tags: 'devsecops'
 
