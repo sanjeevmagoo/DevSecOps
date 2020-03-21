@@ -40,7 +40,7 @@ stages:
       displayName: Push image
       inputs:
         containerRegistry: |
-          $(dockerHub)
+          $(DockerHubConnectionString)
         repository: $(imageName)
         command: push
         tags: |
