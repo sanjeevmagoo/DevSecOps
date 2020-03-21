@@ -28,7 +28,6 @@ stages:
         tags: |
           $(tag)
           
-
           
 - stage: Push
   displayName: Push image
@@ -45,8 +44,7 @@ stages:
         repository: $(imageName)
         command: push
         tags: |
-          test1
-          test2
+          $(tag)
 
 
 
