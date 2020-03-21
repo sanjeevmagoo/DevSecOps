@@ -6,3 +6,4 @@ Run following commands
 az aks get-credentials --resource-group K8s --name DevSecOps
 
 az aks browse --resource-group K8s --name DevSecOps
+
