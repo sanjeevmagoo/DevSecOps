@@ -41,6 +41,7 @@ stages:
       displayName: Push image
       inputs:
         containerRegistry: 'DockerHubConnectionString'
+        repository: 'devsecops'
         command: push
         tags: |
           $(tag)
