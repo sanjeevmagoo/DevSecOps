@@ -32,8 +32,10 @@ stages:
     - task: Docker@2
       inputs:
        containerRegistry: 'DockerHubConnectionString'
-       repository: 'devsecops'
+       repository: $(tag)
        command: 'push'
+       tags: |
+          $(tag)
 
 
 
