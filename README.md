@@ -17,6 +17,8 @@ http://localhost:8080/api/values/5
 We Created Following Service connections in Azure Project to connect to various services in pipelines. 
 
 DockerHubConnectionString - To connect to Docker Hub to push the Docker Images
+
 K8sConnectionString - To connect to K8s cluster to deploy the verified images
+
 GitHub - To connect to GitHub to compile the docker Images 
 
