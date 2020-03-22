@@ -30,6 +30,7 @@ stages:
           
 
     - task: Docker@2
+      displayName: Push Image to DockerHub
       inputs:
        containerRegistry: 'DockerHubConnectionString' 
        repository: 'direct2sanjeev/devsecops'
@@ -39,6 +40,7 @@ stages:
 
 
     - task: KubernetesManifest@0
+      displayName: Deploy Image to K8 Cluster
       inputs:
         action: 'deploy'
         kubernetesServiceConnection: 'K8sConnectionString'
@@ -47,6 +49,7 @@ stages:
 
     
     - task: KubernetesManifest@0
+      displayName: Expose Service
       inputs:
         action: 'deploy'
         kubernetesServiceConnection: 'K8sConnectionString'
