@@ -43,5 +43,4 @@ stages:
         action: 'deploy'
         kubernetesServiceConnection: 'K8sConnectionString'
         namespace: 'default'
-        manifests: '$(Build.SourcesDirectory)/Deployment.yaml'
-
+        manifests: '$(Build.SourcesDirectory)/Deployment.yaml | $(Build.SourcesDirectory)/Service.yaml'
