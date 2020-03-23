@@ -25,6 +25,9 @@ GitHub - To connect to GitHub to compile the docker Images
 
 # Install SysDig via HELM:
 
+
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+
 helm repo update
+
 helm install sysdig --set sysdig.accessKey=<SYSDIG ACCESS KEY> stable/sysdig
