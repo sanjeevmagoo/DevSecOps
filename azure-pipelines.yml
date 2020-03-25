@@ -13,10 +13,10 @@ variables:
 
 stages:
 
-- stage: Build Webapp
+- stage: BuildWebapp
   displayName: Build Webapp
   jobs:  
-  - job: Build
+  - job: BuildWebapp
     displayName: Build webapp
     pool:
       vmImage: 'ubuntu-latest'
